@@ -29,28 +29,13 @@
         }
 
         .logo-group {
-            width: 140px;
+            width: 450px; /* Aumentado para destacar a logo que agora serve como título */
+            max-width: 90%;
             height: auto;
             margin-bottom: 25px;
-            border-radius: 20px;
+            border-radius: 10px;
             box-shadow: 0 0 25px rgba(0, 170, 255, 0.4);
             border: 2px solid var(--primary-blue);
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            margin: 10px 0;
-            color: var(--primary-blue);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-        }
-
-        .subtitle {
-            font-size: 1.5rem;
-            color: #ffffff;
-            margin-bottom: 20px;
-            font-weight: 300;
         }
 
         .release-date-box {
@@ -121,7 +106,6 @@
             font-size: 1.1rem;
         }
 
-        /* Ajuste para manter o formato original das imagens */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -130,11 +114,11 @@
 
         .gallery-grid img {
             width: 100%;
-            height: auto; /* Permite que a altura se ajuste à largura */
-            aspect-ratio: auto; /* Respeita o formato original do arquivo */
-            object-fit: contain; /* Garante que nada seja cortado */
+            height: auto;
+            aspect-ratio: auto;
+            object-fit: contain;
             border-radius: 6px;
-            background: #000; /* Fundo preto para preencher caso a imagem seja menor que o container */
+            background: #000;
             transition: all 0.4s ease;
             border: 1px solid #2a2a35;
         }
@@ -154,20 +138,18 @@
             border-top: 1px solid #1a1a1a;
         }
 
-        /* Ajuste específico para Mobile */
         @media (max-width: 600px) {
-            h1 { font-size: 1.8rem; }
             .content-section { padding: 20px; }
             .gallery-grid { grid-template-columns: 1fr; }
+            .logo-group { width: 300px; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="Picsart_26-04-20_15-59-16-048.jpg" alt="IPE Games Logo" class="logo-group">
-        <h1>PTIO: Christmas Duty</h1>
-        <div class="subtitle">Piggy: The Insolence Origins</div>
+        <img src="Picsart_26-02-01_01-52-49-673-1.jpg" alt="PTIO Christmas Duty" class="logo-group">
+        <br>
         <div class="release-date-box">Launch Date: TBD 2026</div>
     </header>
 
