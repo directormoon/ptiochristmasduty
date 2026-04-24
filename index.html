@@ -121,25 +121,26 @@
             font-size: 1.1rem;
         }
 
+        /* Ajuste para manter o formato original das imagens */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
         }
 
         .gallery-grid img {
             width: 100%;
-            height: 220px;
-            object-fit: cover;
+            height: auto; /* Permite que a altura se ajuste à largura */
+            aspect-ratio: auto; /* Respeita o formato original do arquivo */
+            object-fit: contain; /* Garante que nada seja cortado */
             border-radius: 6px;
-            filter: grayscale(30%);
+            background: #000; /* Fundo preto para preencher caso a imagem seja menor que o container */
             transition: all 0.4s ease;
             border: 1px solid #2a2a35;
         }
 
         .gallery-grid img:hover {
-            filter: grayscale(0%);
-            transform: translateY(-5px);
+            transform: scale(1.02);
             border-color: var(--primary-blue);
             box-shadow: 0 5px 20px rgba(0, 170, 255, 0.2);
         }
@@ -151,6 +152,13 @@
             color: #444;
             font-size: 0.85rem;
             border-top: 1px solid #1a1a1a;
+        }
+
+        /* Ajuste específico para Mobile */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .content-section { padding: 20px; }
+            .gallery-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -219,4 +227,4 @@
     </footer>
 
 </body>
-  </html>
+</html>
