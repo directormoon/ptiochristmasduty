@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piggy: The Insolence Origins | Christmas Duty</title>
+    <style>
+        :root {
+            --primary-blue: #00aaff;
+            --accent-red: #ff4d4d;
+            --dark-bg: #0a0a0c;
+            --card-bg: #16161e;
+            --text-gray: #b9bbbe;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
+        }
+
+        .logo-group {
+            width: 140px;
+            height: auto;
+            margin-bottom: 25px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0, 170, 255, 0.4);
+            border: 2px solid var(--primary-blue);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin: 10px 0;
+            color: var(--primary-blue);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .release-date-box {
+            display: inline-block;
+            background: var(--accent-red);
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content-section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            border-bottom: 3px solid var(--primary-blue);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            border-left: 5px solid var(--accent-red);
+            padding-left: 15px;
+        }
+
+        .synopsis-content {
+            font-style: italic;
+            font-size: 1.15rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+        }
+
+        .gameplay-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .gameplay-list li {
+            margin-bottom: 18px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .gameplay-list li::before {
+            content: '❄';
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+        }
+
+        .gameplay-list strong {
+            color: #fff;
+            display: block;
+            font-size: 1.1rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 6px;
+            filter: grayscale(30%);
+            transition: all 0.4s ease;
+            border: 1px solid #2a2a35;
+        }
+
+        .gallery-grid img:hover {
+            filter: grayscale(0%);
+            transform: translateY(-5px);
+            border-color: var(--primary-blue);
+            box-shadow: 0 5px 20px rgba(0, 170, 255, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            background: #050507;
+            color: #444;
+            font-size: 0.85rem;
+            border-top: 1px solid #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Picsart_26-04-20_15-59-16-048.jpg" alt="IPE Games Logo" class="logo-group">
+        <h1>PTIO: Christmas Duty</h1>
+        <div class="subtitle">Piggy: The Insolence Origins</div>
+        <div class="release-date-box">Launch Date: TBD 2026</div>
+    </header>
+
+    <div class="container">
+        
+        <section class="content-section">
+            <h2>Synopsis</h2>
+            <div class="synopsis-content">
+                On Christmas Eve, you arrive in the quiet, snow-covered village of Polosville. 
+                What begins as a peaceful visit quickly unravels when Santa’s sleigh vanishes without a trace.
+                <br><br>
+                The task seems simple—recover it before Christmas is lost. But whispers lead you to 
+                <strong>Frostbite Mountain</strong>, a place no one dares to approach after nightfall.
+                <br><br>
+                To get there, you must survive the storm… and something that hunts you along the way. 
+                It never rushes, never looks away—always watching its prey. 
+                And whatever guards the fallen sleigh has no intention of letting you leave.
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Gameplay Features</h2>
+            <ul class="gameplay-list">
+                <li>
+                    <strong>Atmospheric Exploration</strong>
+                    Explore the eerie remains of Polosville and scale the heights of Frostbite Mountain under a dynamic moonlit sky.
+                </li>
+                <li>
+                    <strong>Stealth & Survival</strong>
+                    Stay out of sight. A relentless entity stalks the woods, and your only defense is your wits and the shadows.
+                </li>
+                <li>
+                    <strong>Environmental Puzzles</strong>
+                    Interact with the environment to find key items and repair the path toward the crashed sleigh.
+                </li>
+                <li>
+                    <strong>The Insolence Lore</strong>
+                    Uncover hidden notes and secrets that tie this nightmare back to the dark origins of the Insolence.
+                </li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Screenshots</h2>
+            <div class="gallery-grid">
+                <img src="Picsart_26-04-17_19-35-37-805.jpg" alt="Frostbite Mountain Sign">
+                <img src="Picsart_26-04-23_19-08-13-297.jpg" alt="The Golden Star">
+                <img src="Picsart_26-04-23_19-17-43-668.jpg" alt="Mysterious Cabin">
+                <img src="Picsart_26-04-23_19-08-40-713.jpg" alt="Midnight Horizon">
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 IPE Games. This project is a fan-made expansion. Piggy is a franchise created by MiniToon.
+    </footer>
+
+</body>
+  </html>
