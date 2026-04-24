@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piggy: The Insolence Origins | Christmas Duty</title>
+    
+    <link rel="icon" type="image/jpg" href="Picsart_26-04-24_20-32-19-741.jpg">
+
     <style>
         :root {
             --primary-blue: #00aaff;
             --accent-red: #ff4d4d;
             --dark-bg: #0a0a0c;
-            --card-bg: #16161e;
+            --card-bg: rgba(22, 22, 30, 0.9); /* Adicionado transparência para ver o fundo */
             --text-gray: #b9bbbe;
         }
 
         body {
+            /* Fundo utilizando a imagem enviada */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Picsart_26-04-24_17-47-26-858.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             background-color: var(--dark-bg);
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,8 +42,8 @@
             max-width: 95%;
             height: auto;
             margin-bottom: 10px;
-            border: none; /* Remove a caixa/borda */
-            box-shadow: none; /* Remove a sombra externa */
+            border: none;
+            box-shadow: none;
             filter: brightness(1.1) contrast(1.1);
             
             /* Efeito de mesclagem (Fade) nas bordas */
@@ -68,6 +76,7 @@
             margin-bottom: 40px;
             border-bottom: 3px solid var(--primary-blue);
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px); /* Efeito de vidro para destacar do fundo */
         }
 
         h2 {
@@ -137,8 +146,8 @@
         footer {
             text-align: center;
             padding: 50px 20px;
-            background: #050507;
-            color: #444;
+            background: rgba(5, 5, 7, 0.9);
+            color: #888;
             font-size: 0.85rem;
             border-top: 1px solid #1a1a1a;
         }
@@ -153,7 +162,7 @@
 <body>
 
     <header>
-        <img src="Picsart_26-02-01_01-52-49-673-1.png" alt="PTIO Christmas Duty Title" class="logo-group">
+        <img src="Picsart_26-04-24_20-32-19-741.jpg" alt="PTIO Christmas Duty Title" class="logo-group">
         <br>
         <div class="release-date-box">Launch Date: Winter 2026</div>
     </header>
