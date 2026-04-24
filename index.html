@@ -24,18 +24,23 @@
 
         header {
             text-align: center;
-            padding: 60px 20px;
+            padding: 60px 20px 20px 20px;
             background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
         }
 
+        /* Título mesclado com o fundo */
         .logo-group {
-            width: 450px; /* Aumentado para destacar a logo que agora serve como título */
-            max-width: 90%;
+            width: 550px;
+            max-width: 95%;
             height: auto;
-            margin-bottom: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 25px rgba(0, 170, 255, 0.4);
-            border: 2px solid var(--primary-blue);
+            margin-bottom: 10px;
+            border: none; /* Remove a caixa/borda */
+            box-shadow: none; /* Remove a sombra externa */
+            filter: brightness(1.1) contrast(1.1);
+            
+            /* Efeito de mesclagem (Fade) nas bordas */
+            -webkit-mask-image: radial-gradient(circle, black 60%, transparent 95%);
+            mask-image: radial-gradient(circle, black 60%, transparent 95%);
         }
 
         .release-date-box {
@@ -44,7 +49,7 @@
             padding: 8px 20px;
             border-radius: 4px;
             font-weight: bold;
-            margin-top: 15px;
+            margin-top: 5px;
             text-transform: uppercase;
             letter-spacing: 1px;
             box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
@@ -141,14 +146,14 @@
         @media (max-width: 600px) {
             .content-section { padding: 20px; }
             .gallery-grid { grid-template-columns: 1fr; }
-            .logo-group { width: 300px; }
+            .logo-group { width: 320px; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="Picsart_26-02-01_01-52-49-673-1.png" alt="PTIO Christmas Duty" class="logo-group">
+        <img src="Picsart_26-02-01_01-52-49-673-1.png" alt="PTIO Christmas Duty Title" class="logo-group">
         <br>
         <div class="release-date-box">Launch Date: TBD 2026</div>
     </header>
